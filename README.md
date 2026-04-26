@@ -55,15 +55,15 @@ Load (PostgreSQL table dev.raw_weather_data)
 
 1. **Clone the repository**
    ```bash
-git clone https://github.com/yourusername/weather-data-project.git
+git clone https://github.com/hieu-theanalyst/DE_Weather_API_Airflow_dbt_Superset.git
 cd weather-data-project
 ```
 
 2. **Create local environment configuration**
    ```bash
-cp docker/.env.example docker/.env
+cp docker/.env docker/.env.local
 ```
-   If `docker/.env.example` is not present, copy `docker/.env` to a separate local file and keep it out of git.
+   If you prefer, keep a local environment file outside of git and do not commit it.
 
 3. **Start the stack**
    ```bash
