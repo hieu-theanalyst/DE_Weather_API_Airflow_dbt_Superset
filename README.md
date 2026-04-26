@@ -2,6 +2,10 @@
 
 A Docker Compose-based local weather data ETL pipeline that ingests weather data, transforms it with dbt, and exposes analytics through Superset.
 
+<p align="center">
+  <img src="./assets/weather_data_pipeline_etl.png" alt="Architecture Diagram" width="800">
+</p>
+
 ## Overview
 
 This project demonstrates a modern data pipeline using:
