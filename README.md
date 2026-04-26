@@ -1,4 +1,4 @@
-# Weather Data Pipeline
+# End-to-End Weather Data ETL Pipeline
 
 A Docker Compose-based local weather data ETL pipeline that ingests weather data, transforms it with dbt, and exposes analytics through Superset.
 
@@ -54,19 +54,24 @@ Load (PostgreSQL table dev.raw_weather_data)
 ## Installation
 
 1. **Clone the repository**
-   ```bash
+   
+```bash
 git clone https://github.com/hieu-theanalyst/DE_Weather_API_Airflow_dbt_Superset.git
+```
+
+```bash
 cd weather-data-project
 ```
 
 2. **Create local environment configuration**
-   ```bash
+   
+```bash
 cp docker/.env docker/.env.local
 ```
-   If you prefer, keep a local environment file outside of git and do not commit it.
 
 3. **Start the stack**
-   ```bash
+
+```bash
 docker compose up -d
 ```
 
@@ -207,7 +212,6 @@ dag = DAG(
     default_args=default_args,
     schedule=timedelta(minutes=1),
 )
-```
 ```
 
 ## Troubleshooting
